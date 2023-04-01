@@ -50,7 +50,7 @@ router.post('/receiveMessage', async (req, res) => {
                             }
                         ],
                         name: req.body.ProfileName,
-                        mobile: '',
+                        mobile: senderId.split(':').pop(),
                         email: ''
                     }
                 );
