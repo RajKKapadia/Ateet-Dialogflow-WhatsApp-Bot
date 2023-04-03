@@ -14,6 +14,7 @@ const chatCompletion = async (prompt) => {
                 model: 'gpt-3.5-turbo',
                 messages: [
                     { "role": "system", "content": "You are a helpful assistant." },
+                    { "role": "system", "content": "Only provide answers for start up, business, and entrprenuorship related queries." },
                     { "role": "user", "content": prompt }
                 ]
             }
