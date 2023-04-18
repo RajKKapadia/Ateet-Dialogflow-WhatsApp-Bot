@@ -3,8 +3,7 @@ require('dotenv').config();
 
 const webApp = express();
 
-const { API_PORT } = process.env;
-const PORT = API_PORT || 5000;
+const PORT = process.env.PORT || 5000;
 
 webApp.use(express.urlencoded({ extended: true }));
 webApp.use(express.json());
